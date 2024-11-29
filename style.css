@@ -1,0 +1,115 @@
+:root {
+  --border-color: #010005;
+  --font-size: 28px;
+  --padding: 5px;
+  --margin: 5px;
+  --background-color: #d64c15bd;
+  --width: 80px;
+  --text-color: #010005;
+}
+
+/* Stile per il box delle risposte */
+.container {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #c6b2d8;
+}
+
+#ContainerdiRisposte {
+  border: 4px dashed #78e413;
+  padding: 5px;
+  margin: 5px;
+  background-color: #0dcc8c;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px; /* Incrementa la dimensione del testo */
+}
+
+.Risposte {
+  border: 6px dashed var(--border-color);
+  padding: var(--padding);
+  margin: var(--margin);
+  background-color: var(--background-color);
+  cursor: pointer;
+  width: var(--width);
+  font-size: var(--font-size);
+}
+
+.frase {
+  min-height: 80px;
+  border: 4px dashed #1ff526fd;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 80%;
+  color:var(--text-color); 
+  margin-bottom: 20px; /* Aggiunge spazio sotto ogni frase */
+  font-size: var(--font-size);
+}
+
+.frase span {
+  min-width: 50px;
+  text-align: right;
+  font-size: var(--font-size);
+}
+
+.dropzone {
+  border: 8px solid #f0d01a;
+  background-color: #38d11a;
+  height: 60px;
+  width: 160px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size);
+}
+
+.dropzone .Risposte {
+  margin: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--width);
+  background-color:var(--background-color );
+  border: 6px dashed   var(--border-color);
+  font-size: var(--font-size);
+}
+
+/* Nuovo stile per il contenitore delle frasi */
+.frasi-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+}
+
+.frase-wrapper {
+  margin: 15px 0;
+  padding: 10px;
+  border: 5px solid #b00ada;
+  border-radius: 5px;
+  background-color: rgb(11, 204, 204);
+  min-height: 80px;
+  width: 100%;
+  font-size: var(--font-size);
+}
+
+.answers-box {
+  background-color: #b8df09;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(163, 10, 4);
+  text-align: center;
+  font-size: var(--font-size);
+}
